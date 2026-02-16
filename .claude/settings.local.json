@@ -3,27 +3,7 @@
     "allow": [
       "WebSearch",
       "WebFetch(domain:webhwp.hancomdocs.com)",
-      "Bash(wc -l:*)",
-      "Bash(python3:*)",
-      "WebFetch(domain:github.com)",
-      "WebFetch(domain:developer.hancom.com)",
-      "Bash(xclip:*)",
-      "Bash(xsel:*)",
-      "Bash(find:*)",
-      "Bash(curl:*)",
-      "Bash(gh auth status:*)",
-      "Bash(git --version:*)",
-      "Bash(conda env list:*)",
-      "Bash(conda install:*)",
-      "Bash(conda run:*)",
-      "Bash(git init:*)",
-      "Bash(git remote add:*)",
-      "Bash(git branch:*)",
-      "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Bash(git config:*)",
-      "Bash(git push:*)",
-      "Bash(git pull:*)"
+      "WebFetch(domain:developer.hancom.com)"
     ]
   }
 }
