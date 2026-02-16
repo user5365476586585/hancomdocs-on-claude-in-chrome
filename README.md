@@ -22,8 +22,8 @@
 
 ```bash
 # 1. 저장소 클론
-git clone <repository-url>
-cd hdocs
+git clone https://github.com/user5365476586585/hancomdocs-on-claude-in-chrome.git
+cd hancomdocs-on-claude-in-chrome
 
 # 2. Claude Code CLI 설치 (미설치 시)
 # https://docs.anthropic.com/en/docs/claude-code 참조
