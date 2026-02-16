@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:webhwp.hancomdocs.com)",
+      "Bash(wc -l:*)",
+      "Bash(python3:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:developer.hancom.com)",
+      "Bash(xclip:*)",
+      "Bash(xsel:*)",
+      "Bash(find:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
