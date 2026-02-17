@@ -430,6 +430,8 @@ Skill 파일 경로: `.claude/commands/hdocs-{skill명}.md`
 
 ### Skill 로드 트리거
 
+**⚠ 기본 로드 skill (navigate, table, style)은 에디터 내 작업 시 항상 Read로 로드한다. 예외 없음.**
+
 | skill | 로드 조건 |
 |-------|----------|
 | navigate | **기본 로드**: 에디터 내 모든 작업 (탐색, 텍스트 입력, 저장) |
