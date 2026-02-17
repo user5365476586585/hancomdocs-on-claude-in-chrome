@@ -1,7 +1,7 @@
 # 한컴독스 문서 작성 통합 (/hdocs-write)
 
 한컴독스 웹 에디터에서 문서를 자동으로 작성하는 통합 워크플로우 skill.
-여러 하위 skill(navigate, style, format, table, page, insert)을 조합한다.
+CLAUDE.md 내장 기능(탐색/스타일/표)과 비기본 skill(format, page, insert)을 조합한다.
 
 사용자 요청: $ARGUMENTS
 
@@ -106,11 +106,11 @@ F7 → 용지/방향/여백 변경 → 확인
 3. Ctrl+숫자로 적용 (매핑 순서 확인)
 
 [시나리오 C: 여러 스타일을 한꺼번에 만들어야 할 때]
-→ 배치 생성 (hdocs-style G절): 이름 일괄 등록(1패스) → 속성 일괄 설정(2패스)
+→ 배치 생성 (CLAUDE.md 스타일 관리 G절): 이름 일괄 등록(1패스) → 속성 일괄 설정(2패스)
 → 이 경우에만 사전 설정이 합리적 (본문 시작 전)
 ```
 
-**⚠ "설정..." 버튼 JS 클릭**: CLAUDE.md 패턴 13 JS 코드 사용 (btns[0]=문단, btns[1]=글자, btns[2]=글머리표)
+**⚠ "설정..." 버튼 JS 클릭**: CLAUDE.md 스타일 관리 D절 JS 코드 사용 (btns[0]=문단, btns[1]=글자, btns[2]=글머리표)
 
 ### 레시피 4: 본문 작성 (고속 입력)
 
@@ -199,15 +199,15 @@ Ctrl+1 → type("본문 내용...") → Enter
 
 ### 프리셋 A: 실전 보고서 (표준 번호 체계) ★
 
-장/절/소절 구조 + □○-· 기호 체계. → 설정값 상세: hdocs-style "표준 스타일 설정값" 테이블 참조
+장/절/소절 구조 + □○-· 기호 체계. → 설정값 상세: CLAUDE.md 스타일 관리 "표준 스타일 설정값" 테이블 참조
 
 ### 프리셋 B: 간단 보고서 (개요 기반)
 
-스타일 추가 없이 기존 개요 스타일 편집. → hdocs-style "간단한 문서" 테이블 참조
+스타일 추가 없이 기존 개요 스타일 편집. → CLAUDE.md 스타일 관리 "스타일별 일반적 속성" 테이블 참조
 
 ### 프리셋 C: 공문서
 
-개요 기반의 공문서 변형. → hdocs-style "간단한 문서" 섹션의 "공문서 변형" 테이블 참조
+개요 기반의 공문서 변형. → CLAUDE.md 스타일 관리 "스타일별 일반적 속성 > 공문서 변형" 테이블 참조
 
 ---
 
@@ -308,6 +308,6 @@ computer(action="key", text="ctrl+s", tabId={탭ID})
 ---
 
 ## 참조
-- 다른 skill: hdocs-navigate, hdocs-style, hdocs-format, hdocs-table, hdocs-page, hdocs-insert
+- 다른 skill: hdocs-format, hdocs-page, hdocs-insert (탐색/스타일/표는 CLAUDE.md에 내장)
 - CLAUDE.md 오케스트레이터: 공통 패턴 및 에러 처리
 - 스타일 프리셋 상세: 위 "스타일 프리셋" 섹션

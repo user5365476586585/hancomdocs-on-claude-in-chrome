@@ -321,5 +321,5 @@ read_page → 라벨 없는 button 4개 (다운로드/이동/복사/삭제 순�
 ---
 
 ## 참조
-- 에디터 작업: `/hdocs-navigate`, `/hdocs-write` 등 에디터 skill 사용
+- 에디터 작업: CLAUDE.md 내장 기능(탐색/스타일/표) + `/hdocs-write` 등 skill 사용
 - 상위 오케스트레이터: `CLAUDE.md`
